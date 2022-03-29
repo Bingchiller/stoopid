@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <title>{{ .Site.Title }}</title>
+</head>
+<body class="has-navbar-fixed-top">
+  <nav class="navbar is-fixed-top has-shadow">
+    <div class="container">
+    <a href="/" class="navbar-item">PayJordy</a>
+  <div class="navbar-menu navbar-end"></div>
+       {{ range where .Pages "Type" "page" }}
+       <a href="{{ .Permalink }}" class="navbar-item">{{ .Title}}</a></li>
+
+       {{ end }}  
+  
+  </nav>
+</div>
+  <h1>{{ .Title }}</h1>
+  This is the home page
+  
+</body>
+</html>

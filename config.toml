@@ -1,0 +1,4 @@
+baseURL = 'https://bingchiller.github.io/stoopid/'
+languageCode = 'en-us'
+title = 'Hugo Github Test'
+publishDir = "docs"
